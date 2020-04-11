@@ -189,6 +189,94 @@
   }
 }
 
+.fusion-header.fusion-sticky-shadow {
+  height: 65px;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .fusion-row {
+    box-sizing: border-box;
+    color: rgb(63, 63, 63);
+    margin: 0 140px;
+    padding: 0;
+    position: relative;
+
+    .fusion-logo {
+      box-sizing: border-box;
+      color: rgb(63, 63, 63);
+      display: block;
+      float: left;
+      margin: 5.5px 0;
+      max-width: 100%;
+
+      img {
+        height: 54px;
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+        box-sizing: border-box;
+        color: rgb(3, 45, 92);
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: top;
+        width: 224px;
+      }
+
+      img.fusion-standard-logo {
+        display: none;
+      }
+
+      img.fusion-sticky-logo-2x {
+        display: inline-block !important;
+      }
+    }
+
+    .fusion-main-menu {
+      box-sizing: border-box;
+      color: rgb(63, 63, 63);
+      display: block;
+      float: right;
+      overflow: hidden;
+      position: relative;
+      z-index: 200;
+
+      .fusion-menu {
+        box-sizing: border-box;
+        color: rgb(63, 63, 63);
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+
+        .menu-item {
+          box-sizing: border-box;
+          color: rgb(63, 63, 63);
+          cursor: pointer;
+          float: left;
+          list-style: none outside none;
+          margin: 0;
+          overflow: hidden;
+          padding: 0 35px 0 0;
+          position: relative;
+
+          a {
+            line-height: 62px;
+            height: 65px;
+            border-top: 3px solid rgba(0, 0, 0, 0);
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: block;
+            font-weight: 600;
+            list-style: none outside none;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1361px) and (max-width: 1391px) {
   .fusion-header-wrapper {
     .fusion-header {
@@ -212,6 +300,7 @@
     }
   }
 }
+
 
 @media (min-width: 890px) and (max-width: 1360px) {
   .fusion-header-wrapper {

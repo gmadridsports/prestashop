@@ -1,6 +1,9 @@
+"use strict";
+
+import $ from "jquery";
+
 $(window).on('scroll', function (e) {
   var scroll = $(window).scrollTop();
-
   if (scroll > 84)
     $('header.fusion-header-wrapper .fusion-header').addClass('fusion-sticky-shadow');
   else {

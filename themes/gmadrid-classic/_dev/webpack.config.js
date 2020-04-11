@@ -31,7 +31,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 let config = {
   entry: {
-    main: [
+    theme: [
       './js/theme.js',
       './css/theme.scss'
     ],

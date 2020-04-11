@@ -68,7 +68,7 @@
 /************************************************************************/
 /******/ ({
 
-/***/ 11:
+/***/ 10:
 /***/ (function(module, exports) {
 
 module.exports = jQuery;
@@ -4876,34 +4876,35 @@ __webpack_require__(142);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+console.log("hola");
 // "inherit" EventEmitter
+/**
+ * 2007-2018 PrestaShop
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/AFL-3.0
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to http://www.prestashop.com for more information.
+ *
+ * @author    PrestaShop SA <contact@prestashop.com>
+ * @copyright 2007-2018 PrestaShop SA
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
+ * International Registered Trademark & Property of PrestaShop SA
+ */
 for (var i in _events2.default.prototype) {
   _prestashop2.default[i] = _events2.default.prototype[i];
-} /**
-   * 2007-2018 PrestaShop
-   *
-   * NOTICE OF LICENSE
-   *
-   * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
-   * that is bundled with this package in the file LICENSE.txt.
-   * It is also available through the world-wide-web at this URL:
-   * https://opensource.org/licenses/AFL-3.0
-   * If you did not receive a copy of the license and are unable to
-   * obtain it through the world-wide-web, please send an email
-   * to license@prestashop.com so we can send you a copy immediately.
-   *
-   * DISCLAIMER
-   *
-   * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
-   * versions in the future. If you wish to customize PrestaShop for your
-   * needs please refer to http://www.prestashop.com for more information.
-   *
-   * @author    PrestaShop SA <contact@prestashop.com>
-   * @copyright 2007-2018 PrestaShop SA
-   * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
-   * International Registered Trademark & Property of PrestaShop SA
-   */
-
+}
 
 $(document).ready(function () {
   var dropDownEl = $('.js-dropdown');
@@ -4935,7 +4936,7 @@ $(document).ready(function () {
 "use strict";
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -5023,7 +5024,7 @@ var _prestashop = __webpack_require__(30);
 
 var _prestashop2 = _interopRequireDefault(_prestashop);
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -5114,7 +5115,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -5202,7 +5203,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -5299,7 +5300,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -5417,7 +5418,7 @@ exports.default = TopMenu;
 "use strict";
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -5697,15 +5698,23 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 "use strict";
 
 
-$(window).on('scroll', function (e) {
-  var scroll = $(window).scrollTop();
+var _jquery = __webpack_require__(10);
 
-  if (scroll > 84) $('header.fusion-header-wrapper .fusion-header').addClass('fusion-sticky-shadow');else {
-    $('header.fusion-header-wrapper .fusion-header').removeClass('fusion-sticky-shadow');
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log('si');
+
+(0, _jquery2.default)(window).on('scroll', function (e) {
+  console.log('si 2');
+  var scroll = (0, _jquery2.default)(window).scrollTop();
+  if (scroll > 84) (0, _jquery2.default)('header.fusion-header-wrapper .fusion-header').addClass('fusion-sticky-shadow');else {
+    (0, _jquery2.default)('header.fusion-header-wrapper .fusion-header').removeClass('fusion-sticky-shadow');
   }
 });
 
-$(document).ready(function () {
+(0, _jquery2.default)(document).ready(function () {
   var url = window.location.href;
   var lastPart = url.substr(url.lastIndexOf('/') + 1);
   var itemToHighlight = null;
@@ -5716,7 +5725,7 @@ $(document).ready(function () {
     itemToHighlight = "menu-item-9640";
   }
 
-  $("#" + itemToHighlight).addClass("current_page_item");
+  (0, _jquery2.default)("#" + itemToHighlight).addClass("current_page_item");
 });
 
 /***/ }),
@@ -5893,7 +5902,7 @@ $(document).ready(function () {
 "use strict";
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -6075,7 +6084,7 @@ function updateProductListDOM(data) {
 "use strict";
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -6203,7 +6212,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 "use strict";
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -10446,7 +10455,7 @@ module.exports = g;
 "use strict";
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -10829,7 +10838,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -10914,7 +10923,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */
 
 
-var _jquery = __webpack_require__(11);
+var _jquery = __webpack_require__(10);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
