@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/html/themes/gmadrid-classic/templates/checkout/_partials/steps/addresses.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="ea34b5c6cf6511c7c9e23cf7bf5d6792">
+        <source>Your address is incomplete, please update it.</source>
+        <target>Your address is incomplete, please update it.</target>
+        <note>Context:
+File: /var/www/html/themes/gmadrid-classic/templates/checkout/_partials/steps/addresses.tpl:116</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

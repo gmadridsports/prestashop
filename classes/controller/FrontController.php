@@ -311,7 +311,6 @@ class FrontControllerCore extends Controller
         if ($id_cart = (int) $this->recoverCart()) {
             $this->context->cookie->id_cart = (int) $id_cart;
         }
-
         if ($this->auth && !$this->context->customer->isLogged($this->guestAllowed)) {
             Tools::redirect('index.php?controller=authentication'.($this->authRedirection ? '&back='.$this->authRedirection : ''));
         }
@@ -370,6 +369,7 @@ class FrontControllerCore extends Controller
                 $cart = new Cart($this->context->cookie->id_cart);
             }
 
+
             if (Validate::isLoadedObject($cart) && $cart->OrderExists()) {
                 PrestaShopLogger::addLog('Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 1, null, 'Cart', (int) $this->context->cookie->id_cart, true);
                 unset($this->context->cookie->id_cart, $cart, $this->context->cookie->checkedTOS);
@@ -393,6 +393,7 @@ class FrontControllerCore extends Controller
                 $cart->id_currency = (int) $currency->id;
                 $cart->update();
             }
+
             /* Select an address if not set */
             if (isset($cart) && (!isset($cart->id_address_delivery) || $cart->id_address_delivery == 0 ||
                 !isset($cart->id_address_invoice) || $cart->id_address_invoice == 0) && $this->context->cookie->id_customer) {

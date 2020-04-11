@@ -754,6 +754,7 @@ class CartCore extends ObjectModel
                 $result[$key] = array_merge($row, $reduction_type_row);
             }
         }
+
         // Thus you can avoid one query per product, because there will be only one query for all the products of the cart
         Product::cacheProductsFeatures($products_ids);
         Cart::cacheSomeAttributesLists($pa_ids, $this->id_lang);
@@ -1659,7 +1660,6 @@ class CartCore extends ObjectModel
                 ($id_product_attribute != null ? ' AND `id_product_attribute` = '.(int)$id_product_attribute : '')
             );
         }
-
         /* Product deletion */
         $result = Db::getInstance()->execute('
         DELETE FROM `'._DB_PREFIX_.'cart_product`
@@ -1694,7 +1694,6 @@ class CartCore extends ObjectModel
         $gifts = array_filter($this->getProductsWithSeparatedGifts(), function ($product) {
             return array_key_exists('is_gift', $product) && $product['is_gift'];
         });
-
         $preservedGifts = array($id_product . '-' . $id_product_attribute => 0);
 
         foreach ($gifts as $gift) {
@@ -4811,7 +4810,7 @@ class CartCore extends ObjectModel
     public function getProductsWithSeparatedGifts()
     {
         $products = $this->splitGiftsProductsQuantity()
-            ->getProducts($refresh = true);
+            ->getProducts($ractioncartsaefresh = true);
         $this->mergeGiftsProductsQuantity();
 
         return $products;

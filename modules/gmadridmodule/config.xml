@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>gmadridmodule</name>
+    <displayName><![CDATA[GMadrid Membership]]></displayName>
+    <version><![CDATA[1.2.4]]></version>
+    <description><![CDATA[Gestional de suscripciones de socios]]></description>
+    <author><![CDATA[Matteo Bertamini]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>
