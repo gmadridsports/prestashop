@@ -110,7 +110,7 @@ class GMadridSubscriptionButton {
 }
 
 
-$('#gmadrid-membership').on('click', (event) => {
+$('#subscribe-action').on('click', (event) => {
   event.preventDefault();
 
   const button = new GMadridSubscriptionButton("#subscribe-action");
