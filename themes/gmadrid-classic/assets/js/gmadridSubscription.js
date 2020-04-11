@@ -4847,7 +4847,7 @@ GMadridSubscriptionButton._waiting_content = 'Preparando la compra...';
 GMadridSubscriptionButton._redirecting_content = 'Pasando por la caja...';
 
 
-(0, _jquery2.default)('#gmadrid-membership').on('click', function (event) {
+(0, _jquery2.default)('#subscribe-action').on('click', function (event) {
   event.preventDefault();
 
   var button = new GMadridSubscriptionButton("#subscribe-action");
@@ -4863,6 +4863,17 @@ GMadridSubscriptionButton._redirecting_content = 'Pasando por la caja...';
   }).catch(function (value) {
     alert('Ha ocurrido un error mientras preparábamos la compra. Por favor, reinténtalo o contacta con tu responsable de sección');
     button.pristine();
+  });
+});
+
+prestashop.addListener("subscribeGmadridAnnual", function (eventData) {
+  var token = window.prestashop.static_token;
+  var gmadridSubscription = new GmadridSubscription(eventData.membership_product_id, token, eventData.checkout_url);
+
+  gmadridSubscription.processMembership().then(function (value) {
+    window.location = eventData.checkout_url;
+  }).catch(function (value) {
+    alert('Ha ocurrido un error mientras preparábamos la compra. Por favor, reinténtalo o contacta con tu responsable de sección');
   });
 });
 

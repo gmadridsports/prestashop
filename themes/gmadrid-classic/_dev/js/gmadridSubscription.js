@@ -109,7 +109,6 @@ class GMadridSubscriptionButton {
 
 }
 
-
 $('#subscribe-action').on('click', (event) => {
   event.preventDefault();
 
@@ -126,5 +125,17 @@ $('#subscribe-action').on('click', (event) => {
   }).catch(value => {
     alert('Ha ocurrido un error mientras preparábamos la compra. Por favor, reinténtalo o contacta con tu responsable de sección');
     button.pristine();
+  });
+});
+
+
+prestashop.addListener("subscribeGmadridAnnual", function(eventData) {
+  const token = window.prestashop.static_token;
+  const gmadridSubscription = new GmadridSubscription(eventData.membership_product_id, token, eventData.checkout_url);
+
+  gmadridSubscription.processMembership().then(value => {
+    window.location = eventData.checkout_url;
+  }).catch(value => {
+    alert('Ha ocurrido un error mientras preparábamos la compra. Por favor, reinténtalo o contacta con tu responsable de sección');
   });
 });

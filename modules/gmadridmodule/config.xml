@@ -2,7 +2,7 @@
 <module>
     <name>gmadridmodule</name>
     <displayName><![CDATA[GMadrid Membership]]></displayName>
-    <version><![CDATA[1.2.4]]></version>
+    <version><![CDATA[1.3.4]]></version>
     <description><![CDATA[Gestional de suscripciones de socios]]></description>
     <author><![CDATA[Matteo Bertamini]]></author>
     <tab><![CDATA[administration]]></tab>

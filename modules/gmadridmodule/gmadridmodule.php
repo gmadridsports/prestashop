@@ -12,7 +12,7 @@ class GMadridModule extends Module
     {
         $this->name = 'gmadridmodule';
         $this->tab = 'administration';
-        $this->version = '1.2.4';
+        $this->version = '1.3.4';
         $this->author = 'Matteo Bertamini';
 
         $this->bootstrap = true;
