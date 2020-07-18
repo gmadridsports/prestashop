@@ -41,7 +41,7 @@
           </li>
           <li role="menuitem" id="menu-item-9641"
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9641 fusion-dropdown-menu">
-            <a target="_self" href="https://tuclub.gmadridsports.com/index.php?controller=authentication&back=my-account" aria-haspopup="true"><span class="menu-text">SOCIOS</span></a>
+            <a target="_self" href="https://tuclub.gmadridsports.com/index.php?controller=authentication&back=my-account" aria-haspopup="true"><span class="menu-text">SOCIES</span></a>
           </li>
           <li role="menuitem" id="menu-item-2833"
               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2833 fusion-menu-item-button fusion-last-menu-item">
