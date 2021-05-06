@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/PrestaShop/PrestaShop#readme",
   "dependencies": {
-    "json": "^9.0",
+    "json": "^10.0",
     "minimist": "^1.2",
     "mocha": "^2.5",
     "node-uuid": "^1.4",
