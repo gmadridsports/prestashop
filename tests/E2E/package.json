@@ -46,7 +46,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "mochawesome": "^2.3.0",
-    "nodemailer": "^4.0.1",
+    "nodemailer": "^6.4.16",
     "pdf-to-text": "0.0.6",
     "pdfkit": "^0.8.3"
   }
