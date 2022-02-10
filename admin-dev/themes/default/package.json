@@ -22,7 +22,7 @@
         "file-loader": "^1.1.11",
         "imports-loader": "^0.8.0",
         "material-design-icons": "^2",
-        "node-sass": "^4.9.0",
+        "node-sass": "^7.0.0",
         "path": "^0.12.7",
         "postcss-cssnext": "^3.1.0",
         "postcss-loader": "^2.1.5",
