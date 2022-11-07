@@ -27,7 +27,7 @@
   "dependencies": {
     "json": "^9.0",
     "minimist": "^1.2",
-    "mocha": "^2.5",
+    "mocha": "^10.1",
     "node-uuid": "^1.4",
     "parsed-url": "0.0.0",
     "q": "^1.4",
@@ -41,7 +41,7 @@
     "chai": "^4.1.2",
     "chai-string": "^1.4.0",
     "dateformat": "^2.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cli": "^2.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
